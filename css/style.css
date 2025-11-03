@@ -104,7 +104,7 @@ header input[type="text"] {
     text-align: center;
     padding: 120px 20px;
     background-color: #ff9900; 
-    color: #fff;
+    color: #2e2e2e;
 }
 
 .hero h2 {
@@ -334,7 +334,7 @@ footer p {
 }
 
 .service:hover {
-    transform: translateY(-px);
+    transform: translateY(-7px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
 .profile-photo {
@@ -345,6 +345,49 @@ footer p {
     margin-bottom: 15px;
     border: 4px solid #575454;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Audio Page */
+.audio-section {
+    background-color: #ff9800;
+    color: rgb(37, 37, 37);
+    min-height: 90vh;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.audio-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.audio-section p {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.audio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.audio-item {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.audio-item h3 {
+    margin-bottom: 10px;
+}
+
+audio {
+    width: 100%;
 }
 
 

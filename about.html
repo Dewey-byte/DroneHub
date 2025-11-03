@@ -18,6 +18,8 @@
                 <li><a href="products.html">Products</a></li>
                 <li><a href="about.html" class="active">About</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="audio.html" >Audio</a></li>
+
             </ul>
         </nav>
     </header>
@@ -33,13 +35,48 @@
                     I enjoy exploring the world of multimedia — from web design to digital storytelling — because it allows me to combine both logic and imagination. 
                     My goal is to create meaningful digital experiences that inspire others and help shape the future of technology and communication.</p>
                 </div>
+            <div class="typing-animation">
+                <p id="typing-text"></p>
+            </div>
+
+            <script>
+                const text = "Welcome to my world of technology and creativity!";
+                const typingText = document.getElementById("typing-text");
+                let index = 0;
+
+                function typeEffect() {
+                    if (index < text.length) {
+                        typingText.textContent += text.charAt(index);
+                        index++;
+                        setTimeout(typeEffect, 100); // Adjust typing speed here
+                    } else {
+                        setTimeout(() => {
+                            typingText.textContent = "";
+                            index = 0;
+                            typeEffect();
+                        }, 2000); // Delay before restarting
+                    }
+                }
+
+                typeEffect();
+            </script>
+
+            <style>
+                .typing-animation {
+                    font-size: 1.2rem;
+                    font-family: Arial, sans-serif;
+                    color: #333;
+                    margin-top: 20px;
+                }
+                
+            </style>
             </div>
         </section>
 
         <!-- About DroneHub Section -->
         <section class="about">
             <h2>About DroneHub</h2>
-            <p>DroneHub is your trusted online store offering a wide range of DJI drones at competitive prices. We focus on quality, affordability, and customer satisfaction.</p>
+            <p>DroneHub is your trusted Drone Rental + Service with wide range of DJI drones at competitive rates. We focus on quality, affordability, and customer satisfaction.</p>
         </section>
     </main>
 
